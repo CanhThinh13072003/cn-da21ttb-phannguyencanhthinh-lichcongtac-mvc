@@ -52,11 +52,11 @@ $(function () {
         droppable: true, // this allows things to be dropped onto the calendar !!!
         drop: function (date, allDay) { },
 		eventClick: function(calEvent, jsEvent, view) {
-			//alert('Event: ' + calEvent.title);
-			//alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
-			//alert('View: ' + view.name);
-			// change the border color just for fun
-			//$(this).css('border-color', 'red');
+			alert(
+				'Tên người thực hiện: ' + (calEvent.title || 'Không có') + '\n' +
+				'Công việc: ' + (calEvent.assignee || 'Công tác') + '\n' +
+				'Ngày thực hiện: ' + (calEvent.start.format('YYYY-MM-DD') || 'Không xác định')
+			);
 		},
 		dayRender: function(date, cell){
 			//console.log('dayRender');
@@ -71,13 +71,13 @@ $(function () {
 		},
 		eventAfterRender : function(ev, element, view) {
 			if(ev.block == true) {
-				//console.log('After Render = ' + ev.title + ' BLOCK ? ' + ev.block);
+				console.log('After Render = ' + ev.title + ' BLOCK ? ' + ev.block);
 				//fc-day fc-widget-content
 				var start = ev.start.format();
 				$("td.fc-day[data-date='"+ start +"']").addClass('fc-disabled');
 			}
 		}
-		/*,
+		,
 		
 		eventMouseover: function(calEvent, jsEvent) {
 			var tooltip = '<div class="tooltipevent" style="width:100px;height:100px;background:#ccc;position:absolute;z-index:10001;">' + calEvent.title + '</div>';
@@ -95,8 +95,7 @@ $(function () {
 		eventMouseout: function(calEvent, jsEvent) {
 			$(this).css('z-index', 8);
 			$('.tooltipevent').remove();
-		}*/
+		}
 	});
 });//off
 </script>
-

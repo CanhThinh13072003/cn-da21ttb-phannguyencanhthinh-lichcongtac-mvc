@@ -13,7 +13,7 @@
 	</li>
     <li class="dropdown user user-menu"> 
 	<a href="<?php echo WEB_ROOT; ?>?logout"> 
-	<span class="hidden-xs"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Log Out</span> 
+	<span class="hidden-xs"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Đăng Xuất</span> 
 	</a>
     </li>
   </ul>

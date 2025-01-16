@@ -32,7 +32,7 @@ $self = WEB_ROOT . 'admin/index.php';
     <section class="content-header">
       <h1> Hệ thống quản lý lịch công tác <small>Đây là trang chủ!.</small> </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+        <li><a href="#"><i class="fa fa-dashboard"></i>Trang chủ</a></li>
         <li class="active">Lịch</li>
       </ol>
     </section>

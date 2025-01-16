@@ -20,31 +20,31 @@
       <div class="form-group">
         <label for="exampleInputEmail1">Tên người dùng</label>
         <span id="sprytf_name">
-		<input type="text" name="name" class="form-control input-sm" placeholder="Username">
-		<span class="textfieldRequiredMsg">Name is required.</span>
-		<span class="textfieldMinCharsMsg">Name must specify at least 6 characters.</span>
+		<input type="text" name="name" class="form-control input-sm" placeholder="Nhập tên người dùng">
+		<span class="textfieldRequiredMsg">Không được để trống.</span>
+		<span class="textfieldMinCharsMsg">Phải có tối thiểu 6 kí tự.</span>
 		</span>
       </div>
 	  <div class="form-group">
-        <label for="exampleInputEmail1">Address</label>
+        <label for="exampleInputEmail1">Địa chỉ</label>
 		<span id="sprytf_address">
-        <textarea name="address" class="form-control input-sm" placeholder="Address"></textarea>
-		<span class="textareaRequiredMsg">Address is required.</span>
-		<span class="textareaMinCharsMsg">Address must specify at least 10 characters.</span>	
+        <textarea name="address" class="form-control input-sm" placeholder="Nhập địa chỉ"></textarea>
+		<span class="textareaRequiredMsg">Không được để trống.</span>
+		<span class="textareaMinCharsMsg">Phải có tối thiểu 10 kí tự.</span>	
 		</span>
       </div>
 	  <div class="form-group">
         <label for="exampleInputEmail1">SĐT</label>
 		<span id="sprytf_phone">
-        <input type="text" name="phone" class="form-control input-sm"  placeholder="Phone number">
-		<span class="textfieldRequiredMsg">Phone number is required.</span>
+        <input type="text" name="phone" class="form-control input-sm"  placeholder="Nhập SĐT">
+		<span class="textfieldRequiredMsg">Không được để trống.</span>
 		</span>
       </div>
 	  <div class="form-group">
         <label for="exampleInputEmail1">Email</label>
 		<span id="sprytf_email">
-        <input type="text" name="email" class="form-control input-sm" placeholder="Enter email">
-		<span class="textfieldRequiredMsg">Email ID is required.</span>
+        <input type="text" name="email" class="form-control input-sm" placeholder="Nhập email">
+		<span class="textfieldRequiredMsg">Không được để trống.</span>
 		<span class="textfieldInvalidFormatMsg">Please enter a valid email (user@domain.com).</span>
 		</span>
       </div>
@@ -54,11 +54,11 @@
         <label for="exampleInputEmail1">Loại tài khoản</label>
 		<span id="sprytf_type">
         <select name="type"  class="form-control input-sm">
-			<option value=""> -- select user type --</option>
-			<option value="student">Student</option>
-			<option value="teacher">Teacher</option>
+			<option value=""> -- Chọn loại tài khoản --</option>
+			<option value="boss">Boss</option>
+			<option value="normal">Normal</option>
 		</select>
-		<span class="selectRequiredMsg">Please select User Type.</span>
+		<span class="selectRequiredMsg">Chọn loại tài khoản.</span>
 		</span>
 		
       </div>

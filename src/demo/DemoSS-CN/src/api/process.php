@@ -67,7 +67,6 @@ function addHoliday() {
 function bookCalendar() {
 	$name 		= $_POST['name'];
 	$userId		= (int)$_POST['userId'];
-	$job		= $_POST['job'];
 	$address 	= $_POST['address'];
 	$phone 		= $_POST['phone'];
 	$email 		= $_POST['email'];

@@ -2,10 +2,10 @@
     h2 {
         text-align: center;
     }
-    /* canvas {
+    canvas {
         max-width: 500px; 
         max-height: 500px; 
-    } */
+    }
 </style>
 
 <?php
@@ -93,10 +93,10 @@ $conn->close();
 <body>
     <h2>Biểu Đồ Thống Kê Số Lượng Công Việc</h2>
     
-    <h3>Biểu Đồ Cột: Số Lượng Công Việc Theo Người Dùng</h3>
+    <h3>Biểu Đồ Cột: Số lượng công việc theo từng người</h3>
     <canvas id="barChart" width="200" height="75"></canvas>
     
-    <h3>Biểu Đồ Tròn: Số Lượng Công Việc Theo Trạng Thái</h3>
+    <h3>Biểu Đồ Tròn: Số lượng công việc theo trạng thái</h3>
     <canvas id="pieChart" width="75" height="75"></canvas>
     
     <script>
@@ -105,7 +105,7 @@ $conn->close();
         const data = {
             labels: labels,
             datasets: [{
-                label: 'Số Lượng Công Việc',
+                label: 'Số lượng công việc',
                 data: <?php echo json_encode($counts); ?>, // Số lượng công việc
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
                 borderColor: 'rgba(75, 192, 192, 1)',
@@ -134,12 +134,12 @@ $conn->close();
         const pieData = {
             labels: <?php echo json_encode($status_labels); ?>,
             datasets: [{
-                label: 'Số Lượng Công Việc Theo Trạng Thái',
+                label: 'Số lượng công việc theo trạng thái',
                 data: <?php echo json_encode($status_counts); ?>,
                 backgroundColor: [
                     'rgba(0, 128, 0, 1)', // Approved - Màu xanh lá
                     'rgba(255, 0, 0, 1)', // Denied - Màu đỏ
-                    'rgba(255, 206, 86, 1)' // Pending - Giữ nguyên
+                    'rgba(255, 206, 86, 1)' // Pending - Màu vàng
                 ],
                 borderColor: [
                     'rgba(0, 128, 0, 1)',

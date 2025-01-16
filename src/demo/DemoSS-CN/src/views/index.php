@@ -31,12 +31,17 @@ switch ($view) {
 		$content 	= 'holidays.php';		
 		$pageTitle 	= 'Holidays';
 		break;	
-
+	
 	case 'STATISTICS' :
 		$content 	= 'chart.php';		
 		$pageTitle 	= 'Charts';
 		break;	
-		
+	
+	case 'STATISTICS_NORMAL' :
+		$content 	= 'chart_normal.php';		
+		$pageTitle 	= 'Charts';
+		break;	
+
 	case 'CONTACT' :
 		$content 	= 'contact.php';		
 		$pageTitle 	= 'Contact';

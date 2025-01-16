@@ -45,6 +45,18 @@ if (version_compare(PHP_VERSION, '7.4.0', '<')){
 			$_GET[$key] = trim(addslashes($value));
 		}
 	}
+} {
+	if (isset($_POST)) {
+		foreach ($_POST as $key => $value) {
+			$_POST[$key] =  trim(addslashes($value));
+		}
+	}
+	
+	if (isset($_GET)) {
+		foreach ($_GET as $key => $value) {
+			$_GET[$key] = trim(addslashes($value));
+		}
+	}
 }
 
 require_once 'database.php';

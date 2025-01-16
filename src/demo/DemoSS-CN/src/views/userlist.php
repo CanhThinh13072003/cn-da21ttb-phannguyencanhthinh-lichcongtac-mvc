@@ -2,7 +2,7 @@
 $records = getUserRecords();
 $utype = '';
 $type = $_SESSION['calendar_fd_user']['type'];
-if($type == 'admin' || $type == 'teacher') {
+if($type == 'admin') {
 	$utype = 'on';
 }
 ?>
@@ -23,7 +23,7 @@ if($type == 'admin' || $type == 'teacher') {
           <th>Vai trò</th>
           <th style="width: 100px">Trạng thái</th>
           <?php if($utype == 'on') { ?>
-		  <th>Action</th>
+		  <th>Thao tác</th>
 		  <?php } ?>
         </tr>
         <?php
@@ -43,12 +43,12 @@ if($type == 'admin' || $type == 'teacher') {
           <td><?php echo $user_phone; ?></td>
          
           <td>
-		  <i class="fa <?php echo $type == 'teacher' ? 'fa-user' : 'fa-users' ; ?>" aria-hidden="true"></i>&nbsp;&nbsp;<?php echo strtoupper($type); ?></i></td>
+		  <i class="fa <?php echo $type == 'boss' ? 'fa-user' : 'fa-users' ; ?>" aria-hidden="true"></i>&nbsp;&nbsp;<?php echo strtoupper($type); ?></i></td>
           <td><span class="label label-<?php echo $stat; ?>"><?php echo strtoupper($status); ?></span></td>
           <?php if($utype == 'on') { ?>
 		  <td><?php if($status == "active") {?>
-            <a href="javascript:status('<?php echo $user_id ?>', 'inactive');">Inactive</a>&nbsp;/
-			&nbsp;<a href="javascript:status('<?php echo $user_id ?>', 'lock');">Account Lock</a>&nbsp;/
+            <!-- <a href="javascript:status('<?php echo $user_id ?>', 'inactive');">Inactive</a>&nbsp;/
+			&nbsp;<a href="javascript:status('<?php echo $user_id ?>', 'lock');">Account Lock</a>&nbsp;/ -->
 			&nbsp;<a href="javascript:status('<?php echo $user_id ?>', 'delete');">Delete</a>
             <?php } else { ?>
 			<a href="javascript:status('<?php echo $user_id ?>', 'active');">Active</a>

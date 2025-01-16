@@ -101,7 +101,7 @@ function getUserRecords(){
 	$start 	= ($page-1)*$per_page;
 	
 	$type = $_SESSION['calendar_fd_user']['type'];
-	if($type == 'student') {
+	if($type == 'normal') {
 		$id = $_SESSION['calendar_fd_user']['id'];
 		$sql = "SELECT  * FROM tbl_users u WHERE type != 'admin' AND id = $id ORDER BY u.id DESC";
 	}

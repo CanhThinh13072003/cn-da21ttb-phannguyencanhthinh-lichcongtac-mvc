@@ -15,7 +15,7 @@ while($row = dbFetchAssoc($res)) {
   <div class="box box-solid">
     <div class="box-header with-border"> 
       <i class="fa fa-text-width"></i>
-      <h3 class="box-title">Thông tin tài khoản</h3>
+      <h3 class="box-title">User Details</h3>
     </div>
     <!-- /.box-header -->
     <div class="box-body">

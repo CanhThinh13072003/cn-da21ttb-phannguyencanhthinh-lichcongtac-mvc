@@ -1,2 +1,2 @@
-<div class="pull-right hidden-xs"> <!---<b>Người thực hiện: </b>PhanNguyenCanhThinh---></div>
+<div class="pull-right hidden-xs"> <b>Người thực hiện: </b>PhanNguyenCanhThinh</div>
 <strong>Copyright &copy; 2024-2025 <a href="https://ktcn.tvu.edu.vn" target="_blank">Trường Đại học Trà Vinh</a>.</strong> All rights reserved.
